@@ -1,0 +1,4 @@
+# Code owners: their review is requested automatically on changes to these paths.
+* @kirotick
+/ @kirotick
+/.github/ @kirotick
