@@ -14,5 +14,10 @@ Severity: P0 critical · P1 high · P2 medium · P3 low. Status as of 2026-11-05
 | R-08 | Payments could be switched on without approval | P1 | Directive | Disabled by default (ADR-0004); enabling needs approval record here | Mitigated |
 | R-09 | Free Neon and Render tiers sleep / limit connections | P2 | Load test | Paid tiers before real shops; pool size documented | Open |
 | R-10 | Firefox not verified on the owner's PC (missing Visual C++ runtime); weekly CI found the POS app blank in Firefox | P2 | QA | Investigate in CI with traces | Open |
+| R-11 | POS marks UPI paid on the cashier's confirmation (fake screenshot / wrong amount / insider fraud) | P0 | Gap assessment G-01 | Interim labelling + UTR + day-end report (Phase 0); verified dynamic QR (Phase 5) | Open |
+| R-12 | Production database region is Singapore; payment data must stay in India | P0 before payments | Gap assessment G-02 | Move production to AWS India before any payment data (Phase 2) | Open |
+| R-13 | No central logs / alerts; CERT-In 6-hour reporting and 180-day India logs not yet possible | P1 | Gap assessment G-09 | Phase 2 observability | Open |
+
+Full list of findings G-01…G-22 with evidence: [ENTERPRISE_GAP_ASSESSMENT.md](ENTERPRISE_GAP_ASSESSMENT.md). Regulatory mapping: [COMPLIANCE_REGISTER.md](COMPLIANCE_REGISTER.md).
 
 Update this file in a pull request whenever a risk is found, changes or is closed.
